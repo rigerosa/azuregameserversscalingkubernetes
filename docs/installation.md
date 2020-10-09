@@ -134,7 +134,7 @@ simplenodejsudp-collection-example-gamng-vhxhr says: hello
 The demo app supports two extra commands for setting active players and server status. 
 
 - Setting Active Players: If you write `players|3`, then the demo app will send a message to the project's API Server that there are 5 connected players.
-- Setting DedicatedGameServer state: If you write `status|Running`, then the demo app will send a message to the project's API Server that its state is *Running*.
+- Setting DedicatedGameServer state: If you write `state|Running`, then the demo app will send a message to the project's API Server that its state is *Running*.
 - Setting DedicatedGameServer health: If you write `health|Healthy`, then the demo app will send a message to the project's API Server that its health is *Healthy*.
 - Setting DedicatedGameServer MarkedForDeletion state: If you write `markedfordeletion|true`, then the demo app will send a message to the project's API Server that its MarkedForDeletion state is *true*.
 

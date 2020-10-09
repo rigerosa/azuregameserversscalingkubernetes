@@ -54,7 +54,7 @@ server.on('message', function (message, remote) {
         serverResponse = `${serverResponse}, error in setting Server Health: ${err}\n`;
       } else if (response) {
         console.log("Set Server Health OK");
-        serverResponse = `${serverResponse}, set Server Status to ${health} OK\n`;
+        serverResponse = `${serverResponse}, set Server Health to ${health} OK\n`;
       }
       sendResponse(serverResponse, remote);
     });
@@ -66,10 +66,10 @@ server.on('message', function (message, remote) {
       let serverResponse = message.toString().replace("\n","");
       if (err) {
         console.log(err);
-        serverResponse = `${serverResponse}, error in setting Server Status: ${err}\n`;
+        serverResponse = `${serverResponse}, error in setting Server State: ${err}\n`;
       } else if (response) {
-        console.log("Set Server Status OK");
-        serverResponse = `${serverResponse}, set Server Status to ${status} OK\n`;
+        console.log("Set Server State OK");
+        serverResponse = `${serverResponse}, set Server State to ${state} OK\n`;
       }
       sendResponse(serverResponse, remote);
     });
@@ -81,10 +81,10 @@ server.on('message', function (message, remote) {
       let serverResponse = message.toString().replace("\n","");
       if (err) {
         console.log(err);
-        serverResponse = `${serverResponse}, error in setting Server Status: ${err}\n`;
+        serverResponse = `${serverResponse}, error in setting Server MFD: ${err}\n`;
       } else if (response) {
-        console.log("Set Server Status OK");
-        serverResponse = `${serverResponse}, set Server Status to ${status} OK\n`;
+        console.log("Set Server MFD OK");
+        serverResponse = `${serverResponse}, set Server MFD to ${markedForDeletion} OK\n`;
       }
       sendResponse(serverResponse, remote);
     });
